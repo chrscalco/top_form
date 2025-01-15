@@ -1,0 +1,67 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/ODIN/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/ODIN/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Layout */
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+a:visited {
+    color: orange;
+}
+
+#left-side {
+    background-image: url('background_halie_west.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#right-side {
+    flex: 3;
+}
+
+.logo-section {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15vh;
+    width: 35vw;
+    margin-bottom: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#logo-img {
+    width: 120px;
+    height: 150px;
+    
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'norsebold';
+    font-size: 100px;
+}
+
+h5 {
+    color: white;
+    font-weight: 400;
+}
