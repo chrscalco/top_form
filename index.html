@@ -24,10 +24,59 @@
             <h2>You <em>know</em> you want to.</h2>
         </div>
         <div class="form-section">
-           
+
+           <h3>Let's do this!</h3>
+
+           <form action="#" id="account-form">
+
+            <div class="form-row">            
+
+                <div class="form-col">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Thor" required>
+                </div>
+
+                <div class="form-col">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Odinson" required>
+                </div>
+
+            </div>
+
+            
+            <div class="form-row">  
+
+                <div class="form-col">
+                    <label for="email">EMAIL</label>
+                    <input type="email">
+                </div>
+
+                <div class="form-col">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" required>
+                </div>
+            </div>
+
+            
+            <div class="form-row">
+
+                <div class="form-col">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="pwd" id="pwd" required> 
+                </div>
+                
+                <div class="form-col">
+                    
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+                </div>
+            </div>
+
+           </form>
         </div>
         <div class="last-section">
-            
+            <button type="submit" form="account-form" value="submit">Create Account</button>
+            <h4>Already have an account? <a href="#">Log in</a></h4>
         </div>
     </div>
 
