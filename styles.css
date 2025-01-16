@@ -26,7 +26,7 @@ body {
     font-family: 'robotoregular',sans-serif;
 }
 
-a:visited {
+h5 > a:visited {
     color: orange;
 }
 
@@ -47,9 +47,11 @@ a:visited {
 
 .logo-section {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 15vh;
+    height: 20vh;
+    max-height: 200px;
+    min-height: 150px;
     width: 40vw;
-    margin-bottom: 650px;
+    margin-bottom: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,17 +81,24 @@ h5 {
     width: 60vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 /*First section */
 
 .first-section {
-    background-color: antiquewhite;
+    background-color: #EAEDF0;
     padding: 50px;
+    padding-left: 5vw;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    
+}
+
+h2 {
+    max-width: 50ch;
 }
 
 /* Form section */
@@ -97,7 +106,11 @@ h5 {
 .form-section {
     padding: 50px;
     background-color: white;
+    padding-left: 5vw;
     flex: 1;
+    position: relative;
+    box-shadow: 0px 2px 8px grey;
+
 }
 
 .form-row {
@@ -113,18 +126,60 @@ h5 {
 
 label {
     font-size: 12px;
-    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 4px;
     color: #5D6063;
 }
+
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+inpu[type="tel"]:focus {
+    border: 1px solid rgb(0, 0, 161);
+    box-shadow: 2px 2px 10px grey;
+}
+
 
 /* Last section*/
 
 .last-section {
     padding: 50px;
-    background-color: wheat;
+    background-color: #EAEDF0;
+    padding-left: 5vw;
     flex: 1;
 }
 
+button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
 h2 {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.ainline {
+    text-decoration: none;
+    color: #596D48;
 }
